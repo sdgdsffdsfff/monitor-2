@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/site_info_top"></include>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"  >
+        
+        <LinearLayout android:id="@+id/task_info_time_layout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        style="@style/task_info_text_border"
+        android:layout_height="wrap_content"
+         >
+        
+	        <com.monitor.view.MyTimePicker android:id="@+id/task_info_start_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            >  
+	        </com.monitor.view.MyTimePicker>
+	        
+	        <TextView android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="10dp"
+	        	android:paddingRight="10dp"
+	            android:text="@string/label_line"
+	            ></TextView>
+	        
+	        <com.monitor.view.MyTimePicker android:id="@+id/task_info_end_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            >  
+	        </com.monitor.view.MyTimePicker>
+	        
+	    </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            style="@style/task_info_layout_border" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_time"
+                style="@style/site_info_label"></TextView>
+            
+            <RadioGroup android:id="@+id/task_info_time_group"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                 >
+                
+                <RadioButton android:id="@+id/task_info_time_allday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_allday" />
+                
+                <RadioButton android:id="@+id/task_info_time_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/label_custom" />
+                
+            </RadioGroup>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/task_info_layout_border" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_taskname"
+                style="@style/site_info_label"></TextView>
+  
+            <EditText android:id="@+id/task_info_taskname"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/site_info_text"
+                ></EditText>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/task_info_layout_border" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_repeat"
+                style="@style/site_info_label"></TextView>
+            
+            <LinearLayout android:id="@+id/task_info_repeat_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                ></LinearLayout>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/task_info_layout_border" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_interval"
+                style="@style/site_info_label"></TextView>
+            
+            <Spinner android:id="@+id/task_info_interval"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:entries="@array/interval"
+                style="@style/task_info_text_right"
+                ></Spinner>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/task_info_layout_border" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_status"
+                style="@style/site_info_label"></TextView>
+            
+            
+            <com.monitor.view.SwitchButton android:id="@+id/task_info_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></com.monitor.view.SwitchButton>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/task_info_layout_border" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_warning"
+                style="@style/site_info_label"></TextView>
+            
+            
+            <com.monitor.view.SwitchButton android:id="@+id/task_info_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></com.monitor.view.SwitchButton>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/task_info_layout_border" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_error"
+                style="@style/site_info_label"></TextView>
+            
+            
+            <com.monitor.view.SwitchButton android:id="@+id/task_info_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></com.monitor.view.SwitchButton>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/task_info_layout_border"
+            android:layout_height="wrap_content"
+             >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_site"
+                android:gravity="clip_vertical"
+                style="@style/site_info_label"></TextView>
+            
+            <LinearLayout android:id="@+id/task_info_site_layout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/task_info_text_right"
+                ></LinearLayout>
+            
+        </LinearLayout>
+        
+        <Button android:id="@+id/task_info_save" 
+            android:text="@string/btn_save"
+            style="@style/button_save"
+            android:layout_marginBottom="50dp"
+            ></Button>
+        
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

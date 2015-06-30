@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">网站监测</string>
+    <string name="notification_text">正在后台运行</string>
+    <string name="action_settings">设置</string>
+    <string name="action_about">关于</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- top_bar -->
+    <string name="top_bar_site">网站</string>
+    <string name="top_bar_task">任务</string>
+    <string name="top_bar_data">流量</string>
+    <string name="top_bar_setting">设置</string>
+    
+    <!-- button -->
+    <string name="btn_plus">添加</string>
+    <string name="btn_refresh">刷新</string>
+    <string name="btn_edit">编辑</string>
+    <string name="btn_delete">删除</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_about">版本信息</string>
+    
+    <!--  label -->
+    <string name="label_sitename">名称：</string>
+    <string name="label_siteurl">地址：</string>
+    <string name="label_encoding">编码：</string>
+    <string name="label_site_status">状态：</string>
+    <string name="label_site_time">时间：</string>
+    <string name="label_site_info">数据：</string>
+    
+    <string name="label_time">时间：</string>
+    <string name="label_repeat">重复：</string>
+    <string name="label_interval">间隔：</string>
+    <string name="label_label">标签：</string>
+    <string name="label_taskname">名称：</string>
+    <string name="label_status">任务状态：</string>
+    <string name="label_line">－</string>
+    <string name="label_allday">全天</string>
+    <string name="label_custom">自定义</string>
+    <string name="label_site">检测网站：</string>
+	<string name="label_warning">警告提醒：</string>
+	<string name="label_error">异常提醒：</string>
+	
+	<string name="label_timeout">连接超时：</string>
+	<string name="label_warningscript">脚本警告：</string>
+	<string name="label_warninglink">链接警告：</string>
+	<string name="label_vibrator">开启震动：</string>
+	<string name="label_ringwarning">警告铃声：</string>
+	<string name="label_ringerror">异常铃声：</string>
+	<string name="label_ringrepeat">铃声重复：</string>
+	
+	<string name="label_appname">名称：</string>
+	<string name="label_version">版本：</string>
+	<string name="label_versionValue">v1.0</string>
+	<string name="label_update">时间：</string>
+	<string name="label_updateValue">2015年6月26日</string>
+	<string name="label_author">作者：</string>
+	<string name="label_authorValue">freewind</string>
+	<string name="label_site">网站：</string>
+	<string name="label_siteValue">http://www.cctvjs.net/</string>
+	
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/site_info_text_border" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_timeout"
+            style="@style/site_info_label"></TextView>
+        
+        <Spinner android:id="@+id/setting_timeout"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:entries="@array/timeout"
+                style="@style/task_info_text_right"
+                ></Spinner>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/site_info_text_border" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_warninglink"
+            style="@style/site_info_label"></TextView>
+
+        <com.monitor.view.SwitchButton android:id="@+id/setting_warninglink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></com.monitor.view.SwitchButton>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/site_info_text_border" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_warningscript"
+            style="@style/site_info_label"></TextView>
+
+        <com.monitor.view.SwitchButton android:id="@+id/setting_warningscript"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></com.monitor.view.SwitchButton>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/site_info_text_border" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_vibrator"
+            style="@style/site_info_label"></TextView>
+
+        <com.monitor.view.SwitchButton android:id="@+id/setting_vibrator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></com.monitor.view.SwitchButton>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/site_info_text_border" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_ringwarning"
+            style="@style/site_info_label"></TextView>
+
+        <TextView android:id="@+id/setting_ringwarning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></TextView>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/site_info_text_border" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_ringerror"
+            style="@style/site_info_label"></TextView>
+
+        <TextView android:id="@+id/setting_ringerror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></TextView>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/site_info_text_border" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_ringrepeat"
+            style="@style/site_info_label"></TextView>
+
+        <com.monitor.view.SwitchButton android:id="@+id/setting_ringrepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/task_info_text_right"
+                android:layout_marginLeft="15dp"
+                ></com.monitor.view.SwitchButton>
+        
+    </LinearLayout>
+    
+    <Button android:id="@+id/setting_save" 
+            android:text="@string/btn_save"
+            style="@style/button_save"
+            android:layout_marginBottom="50dp"
+            ></Button>
+   <!-- 
+    <Button android:id="@+id/setting_about" 
+            android:text="@string/btn_about"
+            style="@style/button_save"
+            android:layout_marginBottom="30dp"
+            ></Button>
+     --> 
+    
+</LinearLayout>
+</ScrollView>

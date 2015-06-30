@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_bar"
+    android:orientation="horizontal"
+    style="@style/top_bar" >
+    
+    <ImageView android:id="@+id/top_bar_site"
+        android:src="@drawable/top_bar_site"
+        android:contentDescription="@string/top_bar_site"
+        style="@style/top_bar_item"
+        ></ImageView>
+    
+    <ImageView android:id="@+id/top_bar_task"
+        android:src="@drawable/top_bar_task"
+        android:contentDescription="@string/top_bar_task"
+        style="@style/top_bar_item"
+        ></ImageView>
+    
+    <ImageView android:id="@+id/top_bar_data"
+        android:src="@drawable/top_bar_data"
+        android:contentDescription="@string/top_bar_data"
+        style="@style/top_bar_item"
+        ></ImageView>
+    
+    <ImageView android:id="@+id/top_bar_setting"
+        android:src="@drawable/top_bar_setting"
+        android:contentDescription="@string/top_bar_setting"
+        style="@style/top_bar_item"
+        ></ImageView>
+
+</LinearLayout>

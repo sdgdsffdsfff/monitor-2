@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+html, body{
+	margin:0px; padding:3px; font-family:"Microsoft YaHei";  background:#fafafa;
+}
+.head #name{
+	font-size:25px; color:#4E5F6F; font-weight:bold;
+}
+.head #url{
+	margin-left:15px; font-size:16px; color:#999;
+}
+#table{
+	border-collapse:collapse; border:1px solid #DFE4EA; font-size:16px; margin-top:10px;
+}
+#table td{
+	border:1px solid #DFE4EA; line-height:29px; text-align:center; color:#4E5F6F;
+}
+#table .title td{
+	background:#52C2E8; color:#fff; font-weight:bold; text-align:center; line-height:20px; padding:6px 0;
+}
+#table .alt td{
+	background:#F6F9FE;
+}
+#table .line td{
+	font-size:2px; height:2px; line-height:2px; overflow:hidden; background:#52C2E8; padding:0; margin:0;
+}
+
+#table .status0{
+	color:#0a0;
+}
+#table .status1{
+	color:#f60;
+}
+#table .status2{
+	color:#c00;
+}
+#table .status3{
+	color:#036;
+}
+#table .status4{
+	color:#c48bff;
+}
+
+.button a{
+	display:block; background:#286090; border:1px solid #204D74; color:#fff;  margin-top:15px;
+	font-size:18px; line-height:40px; text-align:center; text-decoration:none;
+}

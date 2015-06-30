@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+            
+	    <ListView android:id="@+id/site_main_list" android:layout_width="match_parent" android:layout_height="match_parent"></ListView>
+	    <!-- android:divider="@drawable/listview_divider"
+        android:dividerHeight="2px"
+	    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"   
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:background="#f1f1f1"
+        android:smoothScrollbar="true" /> -->
+	    
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5.0dip"
+        >
+        
+        <ImageView android:id="@+id/site_plus"
+            android:contentDescription="@string/btn_plus"
+            android:src="@drawable/btn_plus"
+            style="@style/button">
+        </ImageView>
+        
+        <ImageView android:id="@+id/site_refresh"
+            android:contentDescription="@string/btn_refresh"
+            android:src="@drawable/btn_refresh"
+            style="@style/button">
+        </ImageView>
+        
+    </LinearLayout>
+</LinearLayout>

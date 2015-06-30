@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="encoding">
+        <item>gb2312</item>
+        <item>utf-8</item>
+        <item>big5</item>
+        <item>gbk</item>
+    </string-array>
+    <string-array name="interval">
+        <item>1分钟</item>
+        <item>2分钟</item>
+        <item>3分钟</item>
+        <item>4分钟</item>
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>15分钟</item>
+        <item>20分钟</item>
+        <item>30分钟</item>
+        <item>45分钟</item>
+        <item>60分钟</item>
+    </string-array>
+    <string-array name="timeout">
+        <item>1秒</item>
+        <item>2秒</item>
+        <item>3秒</item>
+        <item>4秒</item>
+        <item>5秒</item>
+        <item>6秒</item>
+        <item>8秒</item>
+        <item>10秒</item>
+        <item>15秒</item>
+        <item>20秒</item>
+        <item>30秒</item>
+        <item>45秒</item>
+        <item>60秒</item>
+    </string-array>
+</resources>
